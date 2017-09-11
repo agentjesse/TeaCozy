@@ -106,6 +106,7 @@ h2, h4,h3{
 }
 
 .item.flexcon{
+  width: 320px;
   flex-direction: column;
   justify-content: flex-start;
 }
