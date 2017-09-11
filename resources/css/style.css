@@ -1,0 +1,42 @@
+body{
+  margin:0;
+  background-color: gray;/*gray to work, black final*/
+  font-family: Helvetica,sans-serif;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+}
+
+header.flexcon{
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 5;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header img{
+  height: 50px;
+  padding-left: 10px;
+
+}
+
+/*working borders*/
+body div{
+  border: 1px solid black;
+}
+
+/*class for flex containers*/
+.flexcon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main{
+  padding-top:70px;
+  opacity: 0.9;
+}
