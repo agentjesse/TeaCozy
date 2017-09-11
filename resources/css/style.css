@@ -1,6 +1,6 @@
 body{
   margin:0;
-  background-color: gray;/*gray to work, black final*/
+  background-color: black;/*gray to work, black final*/
   font-family: Helvetica,sans-serif;
   font-size: 22px;
   color: seashell;
@@ -33,10 +33,10 @@ a{
   padding: 20px 10px;
 }
 
-/*working borders*/
+/*working borders
 .main div{
   border: 1px solid black;
-}
+}*/
 
 /*class for flex containers*/
 .flexcon{
@@ -75,11 +75,12 @@ a{
 }
 
 #locations{
+  background-image: url('../images/locationsBkg.jpg');
   flex-direction: column;
   width: 1200px;
   height: 500px;
-  justify-content: center;
   align-content: center;
+  padding-top: 70px;
 }
 
 .content{
