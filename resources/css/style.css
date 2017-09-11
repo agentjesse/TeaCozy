@@ -15,7 +15,6 @@ header.flexcon{
   background-color: black;
   z-index: 5;
   min-width: 550px;
-  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -25,7 +24,6 @@ header img{
 
 }
 nav.flexcon{
-  display: flex;
   flex-grow: 1;
   justify-content: flex-end;
 }
@@ -36,7 +34,7 @@ a{
 }
 
 /*working borders*/
-body div{
+.main div{
   border: 1px solid black;
 }
 
@@ -47,7 +45,94 @@ body div{
   justify-content: center;
 }
 
+.main.flexcon{
+  flex-direction: column;
+  align-items: center;
+}
+
 .main{
   padding-top:70px;
   opacity: 0.9;
+}
+
+#mission, #featureTea, #locations{
+  display: flex;
+}
+
+#mission{
+  background-image: url('../images/missionBkg.jpg');
+  width: 1200px;
+  height: 700px;
+  align-items: center;
+}
+
+#featureTea{
+  flex-wrap: wrap;
+  height: 700px;
+  width: 1000px;
+  padding-top: 70px;
+  align-content: flex-start;
+}
+
+#locations{
+  flex-direction: column;
+  width: 1200px;
+  height: 500px;
+  justify-content: center;
+  align-content: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: inherit;
+  background-color: black;
+  justify-content: center;
+  align-items:center;
+
+  /*same result as above but doesn't follow spec centering requirement:
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  background-color: black;*/
+}
+
+h2, h4,h3{
+  padding: 10px;
+  margin: 0;/*remove annoying margins that appear*/
+}
+
+.item.flexcon{
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item img{
+  height: 200px;
+  width: 300px;
+  padding: 10px 10px 0px 10px;
+}
+
+#featureTea .flexcon{
+  align-content: flex-start;
+}
+
+.location.flexcon{
+  background-color: black;
+  flex-direction: column;
+  opacity: 1;
+  width: 300px;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+.contact{
+  height: 200px;
+  width: 100%;
+}
+
+footer h5{
+  padding-left: 20px;
+  text-align: left;
 }
