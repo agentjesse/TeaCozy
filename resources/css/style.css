@@ -14,14 +14,25 @@ header.flexcon{
   border-bottom: 1px solid seashell;
   background-color: black;
   z-index: 5;
+  min-width: 550px;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
 }
 
 header img{
   height: 50px;
   padding-left: 10px;
 
+}
+nav.flexcon{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+a{
+  color: seashell;
+  padding: 20px 10px;
 }
 
 /*working borders*/
