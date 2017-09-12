@@ -1,6 +1,6 @@
 body{
   margin:0;
-  background-color: black;/*gray to work, black final*/
+  background-color: black;/*use gray to work, black final*/
   font-family: Helvetica,sans-serif;
   font-size: 22px;
   color: seashell;
@@ -51,38 +51,34 @@ a{
   opacity: 0.9;
 }
 
-#mission, #featureTea, #locations{
+
+#mission,#featureTea,#locations{
   display: flex;
+  padding-top: 70px;
+  height: 700px;
+  width: 1200px;
 }
 
 #mission{
-  padding-top:70px;
   background-image: url('../images/missionBkg.jpg');
-  width: 1200px;
-  height: 700px;
   align-items: center;
 }
 
 #featureTea{
   flex-wrap: wrap;
-  height: 700px;
   width: 1000px;
-  padding-top: 70px;
   align-content: flex-start;
 }
 
 #locations{
   background-image: url('../images/locationsBkg.jpg');
   flex-direction: column;
-  width: 1200px;
   height: 500px;
-  padding-top: 70px;
 }
 
 .content{
   display: flex;
   flex-direction: column;
-  height: 100px;
   width: inherit;
   background-color: black;
   justify-content: center;
